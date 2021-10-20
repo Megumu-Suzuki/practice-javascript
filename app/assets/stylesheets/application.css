@@ -13,6 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .box-1 {
   display: flex;
   height: 200px;
@@ -131,3 +138,8 @@
   background-image: url(test5.jpg);
 }
 
+#back {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}

@@ -97,3 +97,15 @@ $(document).ready(function () {
     hidePrevious : false
   });
 });
+
+
+// ページの一番上に遷移
+$(function() {
+  $('#back a').on('click',function(event){
+    $('body, html').animate({
+      scrollTop:0
+    }, 800);
+// event.preventDefault(); aタグの機能を無効にするメソッド
+    event.preventDefault();
+  });
+});
