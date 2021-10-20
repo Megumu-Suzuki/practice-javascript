@@ -14,11 +14,15 @@
  *= require_self
  */
 .box-1 {
-  display: flex
+  display: flex;
+  height: 200px;
+  width: 800px;
 }
 
 .box-2 {
-  display: flex
+  display: flex;
+  height: 200px;
+  width: 800px;
 }
 
 
@@ -72,3 +76,58 @@
   height: 160px;
   width: 160px;
 }
+
+.square1 {
+  background-color: #FFFFFF;
+  height: 200px;
+  width: 200px;
+  float: left;
+}
+
+.this {
+  height: 300px;
+  width: 800px;
+}
+
+.children {
+  height: 300px;
+  width: 800px;
+}
+
+.bg1 {
+  background-color: #FFAAAA;
+}
+
+.bg2 {
+  background-color: #FFBBBB;
+}
+
+.bg3 {
+  background-color: #FFCCCC;
+}
+
+.bg4 {
+  background-color: #FFDDDD;
+}
+
+
+#skippr{
+  height: 600px;
+}
+
+.image1 {
+  background-image: url(test1.jpg);
+}
+.image2 {
+  background-image: url(test2.jpg);
+}
+.image3 {
+  background-image: url(test3.jpg);
+}
+.image4 {
+  background-image: url(test4.jpg);
+}
+.image5 {
+  background-image: url(test5.jpg);
+}
+
