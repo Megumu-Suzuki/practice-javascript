@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require activestorage
-//= require turbolinks
 //= require_tree .
 
 
@@ -106,6 +105,19 @@ $(function() {
       scrollTop:0
     }, 800);
 // event.preventDefault(); aタグの機能を無効にするメソッド
+    event.preventDefault();
+  });
+});
+
+// ハンバーガーメニュー
+$(function() {
+  $('.menu-trigger').on('click', function(event) {
+    // クリックされた要素自身（this）のクラスに'active'を追加する
+    // これによりCSSが反映される
+    // toggleClass class属性の追加と削除を交互に行う
+    $(this).toggleClass('active');
+    // fadeToggle要素のフェードイン、フェードアウトを切り替える
+    $('#sp-menu').fadeToggle();
     event.preventDefault();
   });
 });

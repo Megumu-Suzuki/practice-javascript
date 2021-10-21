@@ -10,6 +10,24 @@
   </head>
 
   <body>
+    <div id="sp-menu">
+      <h2>MENU</h2>
+      <ul>
+        <li><%= link_to "MENU1", root_path %></li>
+        <li><%= link_to "MENU2", root_path %></li>
+        <li><%= link_to "MENU3", root_path %></li>
+        <li><%= link_to "MENU4", root_path %></li>
+        <li><%= link_to "MENU5", root_path %></li>
+      </ul>
+    </div>
+
+    <div id="hm-icon">
+      <a class="menu-trigger" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
     <%= yield %>
   </body>
 </html>
