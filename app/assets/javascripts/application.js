@@ -121,3 +121,21 @@ $(function() {
     event.preventDefault();
   });
 });
+
+// タブメニュー
+$(function() {
+  // tabのidが1と等しくない時、非表示にする
+  $('#tab-contents .tab[id != "tab1"]').hide();
+});
+$(function() {
+  $('#tab-menu a').on('click', function(event) {
+    // 一旦全てを非表示する
+    $("#tab-contents .tab").hide();
+    $("#tab-menu .active").removeClass("active");
+    $(this).addClass("active");
+    // .attr()は、HTML要素の属性を取得したり設定できるメソッド
+    // 取得してきたhref属性の中身を表示している
+    $($(this).attr("href")).show();
+    event.preventDefault();
+  });
+});

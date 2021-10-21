@@ -20,6 +20,11 @@
   box-sizing: border-box;
 }
 
+h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+
 .box-1 {
   display: flex;
   height: 200px;
@@ -74,14 +79,14 @@
 
 .box-over {
   border: 10px solid black;
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  width: 200px;
 }
 
 .box-click {
   border: 20px solid blue;
-  height: 160px;
-  width: 160px;
+  height: 200px;
+  width: 200px;
 }
 
 .square1 {
@@ -120,6 +125,9 @@
 
 #skippr{
   height: 600px;
+}
+#images{
+  z-index: 8;
 }
 
 .image1 {
@@ -222,4 +230,56 @@
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+}
+
+/******************************************************/
+/*タブメニュー*/
+.wrap {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+
+#tab-menu {
+  display: flex;
+}
+
+#tab-menu li {
+  list-style-type: none;
+  width: 25%;
+}
+
+#tab-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  background: #000;
+  border: 1px solid #000;
+  border-bottom: none;
+}
+
+#tab-menu .active {
+  background: #fff;
+  color: #000;
+}
+
+#tab-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#tab-contents .tab {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #000;
+  border-top: none;
+}
+
+#tab-contents p {
+  color: #000;
+  line-height: 2.5;
 }

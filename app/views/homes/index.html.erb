@@ -1,11 +1,11 @@
 <%#= javascript_include_tag "function.js" %>
 <%= link_to "topページ", root_path %>
-<p>jQuery稼働テスト(未稼働)</p>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $("p").text("jQuery稼働テスト(稼働中)");
-  });
-</script>
+<!--<p>jQuery稼働テスト(未稼働)</p>-->
+<!--<script type="text/javascript">-->
+<!--  $(document).ready(function() {-->
+<!--    $("p").text("jQuery稼働テスト(稼働中)");-->
+<!--  });-->
+<!--</script>-->
 
 <h1>画像スライド機能</h1>
 <div id="skippr">
@@ -17,41 +17,56 @@
     <div class="image5"></div>
   </div>
 </div>
-
-<h2>jQuery学習</h2>
-<div class="box-1">
-  <div class="box1"></div>
-  <div class="box2"></div>
-  <div class="box3"></div>
-  <div class="box4"></div>
-</div>
-<div class="box-2">
-  <div class="box5"></div>
-  <div class="box6"></div>
-</div>
-
-<div>
-  <h2>this,childrenの学習</h2>
-  <div class="this">
-    <h1>thisサンプル</h1>
-    <div class="square">
-      <div class="square1 bg1"></div>
-      <div class="square1 bg2"></div>
-      <div class="square1 bg3"></div>
-      <div class="square1 bg4"></div>
+<!------------------------------------------------------------------->
+<h1>タブメニュー機能</h1>
+<div class="wrap">
+  <ul id="tab-menu">
+    <li><a href="#tab1" class="active">jQuery</a></li>
+    <li><a href="#tab2" class="">thisサンプル</a></li>
+    <li><a href="#tab3" class="">childrenサンプル</a></li>
+    <li><a href="#tab4" class="">TAB4</a></li>
+  </ul>
+  <div id="tab-contents">
+    <div id="tab1" class="tab">
+      <div class="box-1">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+      </div>
+      <div class="box-2">
+        <div class="box5"></div>
+        <div class="box6"></div>
+      </div>
     </div>
-  </div>
 
-  <div class="children">
-    <h1>childrenサンプル</h1>
-    <button>クリック</button>
-    <h3>リスト</h3>
-    <ul>
-      <li>Home</li>
-      <li>Concept</li>
-      <li>Products</li>
-      <li>Access</li>
-    </ul>
+    <div id="tab2" class="tab">
+      <div class="this">
+        <div class="square">
+          <div class="square1 bg1"></div>
+          <div class="square1 bg2"></div>
+          <div class="square1 bg3"></div>
+          <div class="square1 bg4"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab3" class="tab">
+      <div class="children">
+        <button>クリック</button>
+        <h3>リスト</h3>
+        <ul>
+          <li>Home</li>
+          <li>Concept</li>
+          <li>Products</li>
+          <li>Access</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="tab4" class="tab">
+      <p>TAB4のテキストが入ります。TAB4のテキストが入ります。TAB4のテキストが入ります。TAB4のテキストが入ります。</p>
+    </div>
   </div>
 </div>
 
